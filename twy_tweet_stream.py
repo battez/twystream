@@ -40,8 +40,10 @@ class TwitterStream(TwythonStreamer):
         self.disconnect()
 
 
-def stream_tweets(tweets_queue):
+def stream_tweets(tweets_queue, querystring, filter='follow'):
     ''' samples the stream API and handles errors'''
+    
+    
     # OAuth credentials 
     consumer_key = config.ul_consumer_key
     consumer_secret = config.ul_consumer_secret
@@ -50,8 +52,12 @@ def stream_tweets(tweets_queue):
     try:
         stream = TwitterStream(consumer_key, consumer_secret, token, token_secret, tweets_queue)
         # filter on users / keywords
-        # stream.statuses.filter(track='flooding', language='en')
-        stream.statuses.filter(follow=comma_sep_string)
+        if (filter == 'follow'):
+            stream.statuses.filter(follow=querystring)
+        elif (filter == 'track'):
+            stream.statuses.filter(track=querystring, language='en')
+        else:
+            stream.statuses.filter(locations=querystring)
 
     except ChunkedEncodingError:
         # Sometimes the API sends back one byte less than expected which results in an exception in the
@@ -69,17 +75,18 @@ def process_tweets(dbc, tweets_queue):
         if count < 1000000:
             count += 1
         else:
-            self.disconnect()
-            exit('max no collected:' + count)
+            
+            exit('max no collected:' + str(count))
 
         # debug:
-        # print(tweet['text'].encode('utf-8'))
+        if count < 10:
+            print(tweet['text'].encode('utf-8'))
         
         # insert tweet dict into mongodb
         dbc.insert_one(tweet)
         tweets_queue.task_done()
 
-def get_dbc(db_name, collection, host):
+def get_dbc(db_name, collection, host='localhost:27017'):
     '''Convenience wrapper for a collection in mongoDB'''
     from pymongo import MongoClient
     try:
@@ -95,21 +102,44 @@ def get_dbc(db_name, collection, host):
 if __name__ == '__main__':
     ''' run the script, be sure to adjust the query as needed'''
 
-    from twython_search_api_lib import load_tweet_ids
-    ids = load_tweet_ids(TWITDIR + r'\results.json', 1000)
+    # choose which filter and query will be streamed
+    filters = ['follow', 'locations', 'track']
+    query = ''
+    filtering = filters[1]
 
-    # ...and remove any users we do not wish to search on:
-    users = [user for user in ids if user not in config.excluded_users]
-    # then draw a random subsample of 50 of these:
-    random.shuffle(users)
-    users = random.sample(users, 50)
+    if(filtering == 'follow'):
+        from twython_search_api_lib import load_tweet_ids
 
-    comma_sep_string = ",".join(users)
+        # load user IDs we will track:
+        ids = load_tweet_ids(TWITDIR + r'\results.json', 1000)
+
+        # ...and remove any users we do not wish to search on:
+        users = [user for user in ids if user not in config.excluded_users]
+        # then draw a random subsample of 50 of these:
+        random.shuffle(users)
+        users = random.sample(users, 50)
+
+        query = ",".join(users)
     
+    elif (filtering == 'locations'):
+        # FIXME: take the prioritised tweets:
+        dbc = get_dbc('Twitter', 'gauges')
+        sampled = dbc.aggregate([{'$sample':{'size':25}}])
+        prefix = ''
+        for document in sampled:
+        
+            coords = [str(coord) for coord in document['bounding_box']]
+            query += prefix + ','.join(coords)
+            prefix = ','
+           
+    else:
+        pass 
+
     # remote db via pymongo
     dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
-    
+
     tweet_queue = Queue()
-    Thread(target=stream_tweets, args=(tweet_queue,), daemon=True).start()
+    
+    Thread(target=stream_tweets, args=(tweet_queue,query,filtering), daemon=True).start()
 
     process_tweets(dbc, tweet_queue)
