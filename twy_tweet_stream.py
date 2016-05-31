@@ -8,6 +8,7 @@ import config
 
 # Thread as the consumer of the Twitter stream will run in a separate thread.
 from threading import Thread
+import threading
 
 # provide a lock-free way to move messages from one thread to another.
 from queue import Queue
@@ -19,6 +20,13 @@ from requests.exceptions import ChunkedEncodingError
 
 import json
 import random
+import time
+
+# basic logging for this task.
+import logging
+FORMAT = "%(asctime)-15s %(message)s"
+logging.basicConfig(filename="log.txt", level=logging.INFO, format=FORMAT)
+
 
 # implement our extension to Twythons streamer
 class TwitterStream(TwythonStreamer):
@@ -26,6 +34,7 @@ class TwitterStream(TwythonStreamer):
      when a tweet is received and on errors.'''
     def __init__(self, consumer_key, consumer_secret, token, token_secret, tqueue):
         self.tweet_queue = tqueue
+        self._stopevent = threading.Event( )
         # pass credentials to the parent class for authenticating:
         super(TwitterStream, self).__init__(consumer_key, consumer_secret, token, token_secret)
 
@@ -37,18 +46,18 @@ class TwitterStream(TwythonStreamer):
         print(status_code)
         
         # Uncomment to stop trying to get data because of the error
-        self.disconnect()
+        # self.disconnect()
 
 
 def stream_tweets(tweets_queue, querystring, filter='follow'):
     ''' samples the stream API and handles errors'''
-    
     
     # OAuth credentials 
     consumer_key = config.ul_consumer_key
     consumer_secret = config.ul_consumer_secret
     token = config.ul_access_token
     token_secret = config.ul_access_secret
+
     try:
         stream = TwitterStream(consumer_key, consumer_secret, token, token_secret, tweets_queue)
         # filter on users / keywords
@@ -57,7 +66,7 @@ def stream_tweets(tweets_queue, querystring, filter='follow'):
         elif (filter == 'track'):
             stream.statuses.filter(track=querystring, language='en')
         else:
-            stream.statuses.filter(locations=querystring)
+            stream.statuses.filter(locations=querystring, language='en')
 
     except ChunkedEncodingError:
         # Sometimes the API sends back one byte less than expected which results in an exception in the
@@ -68,26 +77,30 @@ def stream_tweets(tweets_queue, querystring, filter='follow'):
 def process_tweets(dbc, tweets_queue):
     '''loop over the queue and process each elementwise'''
     count = 0
-    
+    max_captured = 1000000
     while True:
-        tweet = tweets_queue.get()
-        # 1 million
-        if count < 1000000:
+    
+        if (count < max_captured) :
+            tweet = tweets_queue.get()
             count += 1
         else:
+            print('max reached, or timer expired - num. collected:' + str(count))
             
-            exit('max no collected:' + str(count))
+            break
 
-        # debug:
-        if count < 10:
+        # debug to show it running initially:
+        if count < 5:
             print(tweet['text'].encode('utf-8'))
         
         # insert tweet dict into mongodb
         dbc.insert_one(tweet)
         tweets_queue.task_done()
 
+    return
+
 def get_dbc(db_name, collection, host='localhost:27017'):
-    '''Convenience wrapper for a collection in mongoDB'''
+    '''Convenience wrapper for connecting to a collection 
+    in mongoDB'''
     from pymongo import MongoClient
     try:
         client = MongoClient(host)
@@ -100,11 +113,15 @@ def get_dbc(db_name, collection, host='localhost:27017'):
 
 
 if __name__ == '__main__':
-    ''' run the script, be sure to adjust the query as needed'''
+    ''' run the script, be sure to adjust the query 
+    as needed'''
+
+    logging.info('started')
 
     # choose which filter and query will be streamed
     filters = ['follow', 'locations', 'track']
     query = ''
+    # set the Twitter Stream type of query here:
     filtering = filters[1]
 
     if(filtering == 'follow'):
@@ -124,6 +141,7 @@ if __name__ == '__main__':
     elif (filtering == 'locations'):
         # FIXME: take the prioritised tweets:
         dbc = get_dbc('Twitter', 'gauges')
+        print('sampling...')
         sampled = dbc.aggregate([{'$sample':{'size':25}}])
         prefix = ''
         for document in sampled:
@@ -133,13 +151,22 @@ if __name__ == '__main__':
             prefix = ','
            
     else:
+        # TODO: keyword tracking if needed.
         pass 
 
-    # remote db via pymongo
+    # Store the Twitter Stream of tweets in a remote db via pymongo
     dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
 
+    # set up the queue & htread to make it more robust:
     tweet_queue = Queue()
-    
-    Thread(target=stream_tweets, args=(tweet_queue,query,filtering), daemon=True).start()
 
+    # setup a thread whose functionality is the target:
+    t = Thread(name='Stream-Tweets', target=stream_tweets, \
+        args=(tweet_queue, query, filtering), daemon=True)
+    t.start() # since it is a daemon, we don't t.join() .
+
+    # infinite loop that stores the tweets from the queue:
     process_tweets(dbc, tweet_queue)
+
+
+    

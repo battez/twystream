@@ -1,0 +1,1462 @@
+INFO:root:started
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 22:00:18,510 started
+2016-05-28 22:00:18,567 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 22:53:50,101 started
+2016-05-28 22:53:50,161 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 22:58:24,347 started
+2016-05-28 22:58:24,406 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:03:24,302 started
+2016-05-28 23:03:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:08:24,412 started
+2016-05-28 23:08:24,469 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:13:24,337 started
+2016-05-28 23:13:24,393 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:18:24,322 started
+2016-05-28 23:18:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:23:24,322 started
+2016-05-28 23:23:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:28:24,326 started
+2016-05-28 23:28:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:33:24,321 started
+2016-05-28 23:33:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:38:24,444 started
+2016-05-28 23:38:24,499 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:43:24,308 started
+2016-05-28 23:43:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:48:24,277 started
+2016-05-28 23:48:24,334 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:53:24,333 started
+2016-05-28 23:53:24,388 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-28 23:58:24,310 started
+2016-05-28 23:58:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:03:24,320 started
+2016-05-29 00:03:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:08:24,507 started
+2016-05-29 00:08:24,568 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:13:24,326 started
+2016-05-29 00:13:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:18:24,297 started
+2016-05-29 00:18:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:23:24,312 started
+2016-05-29 00:23:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:28:24,286 started
+2016-05-29 00:28:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:33:24,324 started
+2016-05-29 00:33:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:38:24,298 started
+2016-05-29 00:38:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:43:24,306 started
+2016-05-29 00:43:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:48:24,315 started
+2016-05-29 00:48:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:53:24,318 started
+2016-05-29 00:53:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 00:58:24,304 started
+2016-05-29 00:58:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:03:24,289 started
+2016-05-29 01:03:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:08:24,306 started
+2016-05-29 01:08:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:13:24,306 started
+2016-05-29 01:13:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:18:24,304 started
+2016-05-29 01:18:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:23:24,308 started
+2016-05-29 01:23:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:28:24,310 started
+2016-05-29 01:28:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:33:24,286 started
+2016-05-29 01:33:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:38:24,304 started
+2016-05-29 01:38:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:43:24,316 started
+2016-05-29 01:43:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:48:24,317 started
+2016-05-29 01:48:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:53:24,336 started
+2016-05-29 01:53:24,391 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 01:58:24,322 started
+2016-05-29 01:58:24,378 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:03:24,306 started
+2016-05-29 02:03:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:08:24,360 started
+2016-05-29 02:08:24,415 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:13:24,317 started
+2016-05-29 02:13:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:18:24,304 started
+2016-05-29 02:18:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:23:24,328 started
+2016-05-29 02:23:24,384 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:28:24,288 started
+2016-05-29 02:28:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:33:24,278 started
+2016-05-29 02:33:24,335 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:38:24,297 started
+2016-05-29 02:38:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:43:24,300 started
+2016-05-29 02:43:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:48:24,301 started
+2016-05-29 02:48:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:53:24,281 started
+2016-05-29 02:53:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 02:58:24,306 started
+2016-05-29 02:58:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:03:24,309 started
+2016-05-29 03:03:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:08:24,304 started
+2016-05-29 03:08:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:13:24,304 started
+2016-05-29 03:13:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:18:24,320 started
+2016-05-29 03:18:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:23:24,328 started
+2016-05-29 03:23:24,384 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:28:24,350 started
+2016-05-29 03:28:24,405 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:33:24,375 started
+2016-05-29 03:33:24,432 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:38:24,363 started
+2016-05-29 03:38:24,419 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:43:24,280 started
+2016-05-29 03:43:24,336 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:48:24,316 started
+2016-05-29 03:48:24,374 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:53:24,368 started
+2016-05-29 03:53:24,424 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 03:58:25,750 started
+2016-05-29 03:58:26,247 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:03:24,305 started
+2016-05-29 04:03:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:08:24,274 started
+2016-05-29 04:08:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:13:24,290 started
+2016-05-29 04:13:24,347 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:18:24,508 started
+2016-05-29 04:18:24,599 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:23:24,433 started
+2016-05-29 04:23:24,497 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:28:24,332 started
+2016-05-29 04:28:24,390 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:33:24,288 started
+2016-05-29 04:33:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:38:24,313 started
+2016-05-29 04:38:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:43:24,302 started
+2016-05-29 04:43:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:48:24,321 started
+2016-05-29 04:48:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:53:24,331 started
+2016-05-29 04:53:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 04:58:24,306 started
+2016-05-29 04:58:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:03:24,313 started
+2016-05-29 05:03:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:08:25,322 started
+2016-05-29 05:08:25,640 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:13:24,307 started
+2016-05-29 05:13:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:18:24,308 started
+2016-05-29 05:18:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:23:24,330 started
+2016-05-29 05:23:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:28:24,325 started
+2016-05-29 05:28:24,384 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:33:24,290 started
+2016-05-29 05:33:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:38:24,302 started
+2016-05-29 05:38:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:43:24,294 started
+2016-05-29 05:43:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:48:24,322 started
+2016-05-29 05:48:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:53:24,318 started
+2016-05-29 05:53:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 05:58:24,304 started
+2016-05-29 05:58:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:03:24,317 started
+2016-05-29 06:03:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:08:24,312 started
+2016-05-29 06:08:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:13:24,311 started
+2016-05-29 06:13:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:18:24,317 started
+2016-05-29 06:18:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:23:24,326 started
+2016-05-29 06:23:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:28:24,292 started
+2016-05-29 06:28:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:33:24,314 started
+2016-05-29 06:33:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:38:24,312 started
+2016-05-29 06:38:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:43:24,310 started
+2016-05-29 06:43:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:48:24,312 started
+2016-05-29 06:48:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:53:24,317 started
+2016-05-29 06:53:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 06:58:24,310 started
+2016-05-29 06:58:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:03:24,307 started
+2016-05-29 07:03:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:08:24,310 started
+2016-05-29 07:08:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:13:24,369 started
+2016-05-29 07:13:24,427 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:18:24,296 started
+2016-05-29 07:18:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:23:24,317 started
+2016-05-29 07:23:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:28:24,307 started
+2016-05-29 07:28:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:33:24,305 started
+2016-05-29 07:33:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:43:24,324 started
+2016-05-29 07:43:24,383 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:48:24,304 started
+2016-05-29 07:48:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:53:24,314 started
+2016-05-29 07:53:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 07:58:24,303 started
+2016-05-29 07:58:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:03:24,278 started
+2016-05-29 08:03:24,336 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:08:24,297 started
+2016-05-29 08:08:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:13:24,314 started
+2016-05-29 08:13:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:18:24,295 started
+2016-05-29 08:18:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:23:24,309 started
+2016-05-29 08:23:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:28:24,331 started
+2016-05-29 08:28:24,389 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:33:24,318 started
+2016-05-29 08:33:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:38:24,301 started
+2016-05-29 08:38:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:43:24,308 started
+2016-05-29 08:43:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:48:24,307 started
+2016-05-29 08:48:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:53:24,309 started
+2016-05-29 08:53:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 08:58:24,307 started
+2016-05-29 08:58:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:08:24,359 started
+2016-05-29 09:08:24,417 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:13:24,311 started
+2016-05-29 09:13:24,408 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:18:24,310 started
+2016-05-29 09:18:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:23:24,301 started
+2016-05-29 09:23:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:28:24,305 started
+2016-05-29 09:28:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:33:24,313 started
+2016-05-29 09:33:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:38:24,302 started
+2016-05-29 09:38:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:43:24,317 started
+2016-05-29 09:43:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:48:24,321 started
+2016-05-29 09:48:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:53:24,306 started
+2016-05-29 09:53:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 09:58:24,304 started
+2016-05-29 09:58:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:03:24,306 started
+2016-05-29 10:03:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:08:24,312 started
+2016-05-29 10:08:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:13:24,309 started
+2016-05-29 10:13:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:18:24,295 started
+2016-05-29 10:18:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:28:24,337 started
+2016-05-29 10:28:24,397 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:33:24,300 started
+2016-05-29 10:33:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:38:24,298 started
+2016-05-29 10:38:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:43:24,312 started
+2016-05-29 10:43:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:48:24,327 started
+2016-05-29 10:48:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:53:24,307 started
+2016-05-29 10:53:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 10:58:24,304 started
+2016-05-29 10:58:24,359 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:03:24,311 started
+2016-05-29 11:03:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:08:24,311 started
+2016-05-29 11:08:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:13:24,313 started
+2016-05-29 11:13:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:18:24,300 started
+2016-05-29 11:18:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:23:24,329 started
+2016-05-29 11:23:24,384 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:28:24,310 started
+2016-05-29 11:28:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:33:24,312 started
+2016-05-29 11:33:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:38:24,311 started
+2016-05-29 11:38:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:43:24,322 started
+2016-05-29 11:43:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:48:24,308 started
+2016-05-29 11:48:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:53:24,313 started
+2016-05-29 11:53:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 11:58:24,317 started
+2016-05-29 11:58:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:08:24,329 started
+2016-05-29 12:08:24,387 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:13:24,315 started
+2016-05-29 12:13:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:18:24,320 started
+2016-05-29 12:18:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:23:24,293 started
+2016-05-29 12:23:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:28:24,303 started
+2016-05-29 12:28:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:33:24,325 started
+2016-05-29 12:33:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:38:24,304 started
+2016-05-29 12:38:24,359 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:43:24,332 started
+2016-05-29 12:43:24,388 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:48:24,286 started
+2016-05-29 12:48:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:53:24,308 started
+2016-05-29 12:53:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 12:58:24,297 started
+2016-05-29 12:58:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:03:24,314 started
+2016-05-29 13:03:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:08:24,433 started
+2016-05-29 13:08:24,525 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:13:24,314 started
+2016-05-29 13:13:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:18:24,291 started
+2016-05-29 13:18:24,347 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:23:24,305 started
+2016-05-29 13:23:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:28:24,316 started
+2016-05-29 13:28:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:33:24,300 started
+2016-05-29 13:33:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:38:24,315 started
+2016-05-29 13:38:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:43:24,324 started
+2016-05-29 13:43:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:48:24,295 started
+2016-05-29 13:48:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:53:24,314 started
+2016-05-29 13:53:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 13:58:24,324 started
+2016-05-29 13:58:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:03:24,292 started
+2016-05-29 14:03:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:08:24,299 started
+2016-05-29 14:08:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:13:24,302 started
+2016-05-29 14:13:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:18:24,318 started
+2016-05-29 14:18:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:23:24,287 started
+2016-05-29 14:23:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:28:24,299 started
+2016-05-29 14:28:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:33:24,304 started
+2016-05-29 14:33:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:38:24,301 started
+2016-05-29 14:38:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:43:24,300 started
+2016-05-29 14:43:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:48:24,295 started
+2016-05-29 14:48:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:53:24,300 started
+2016-05-29 14:53:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 14:58:24,316 started
+2016-05-29 14:58:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:03:24,317 started
+2016-05-29 15:03:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:08:24,333 started
+2016-05-29 15:08:24,388 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:13:24,317 started
+2016-05-29 15:13:24,374 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:18:24,305 started
+2016-05-29 15:18:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:23:24,335 started
+2016-05-29 15:23:24,392 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:28:24,311 started
+2016-05-29 15:28:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:33:24,310 started
+2016-05-29 15:33:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:38:24,303 started
+2016-05-29 15:38:24,359 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:43:24,321 started
+2016-05-29 15:43:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:48:24,313 started
+2016-05-29 15:48:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:53:24,284 started
+2016-05-29 15:53:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 15:58:24,284 started
+2016-05-29 15:58:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:03:24,311 started
+2016-05-29 16:03:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:08:24,286 started
+2016-05-29 16:08:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:13:24,299 started
+2016-05-29 16:13:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:18:24,359 started
+2016-05-29 16:18:24,415 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:23:24,348 started
+2016-05-29 16:23:24,405 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:28:24,327 started
+2016-05-29 16:28:24,383 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:33:24,328 started
+2016-05-29 16:33:24,384 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:38:24,293 started
+2016-05-29 16:38:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:43:24,270 started
+2016-05-29 16:43:24,327 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:48:24,322 started
+2016-05-29 16:48:24,378 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:53:24,337 started
+2016-05-29 16:53:24,392 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 16:58:24,305 started
+2016-05-29 16:58:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:03:24,282 started
+2016-05-29 17:03:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:08:24,325 started
+2016-05-29 17:08:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:13:24,308 started
+2016-05-29 17:13:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:18:24,310 started
+2016-05-29 17:18:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:23:24,320 started
+2016-05-29 17:23:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:28:24,339 started
+2016-05-29 17:28:24,395 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:33:24,315 started
+2016-05-29 17:33:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:38:24,315 started
+2016-05-29 17:38:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:43:24,328 started
+2016-05-29 17:43:24,384 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:48:24,315 started
+2016-05-29 17:48:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:53:24,314 started
+2016-05-29 17:53:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 17:58:24,316 started
+2016-05-29 17:58:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:03:24,317 started
+2016-05-29 18:03:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:08:24,318 started
+2016-05-29 18:08:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:13:24,311 started
+2016-05-29 18:13:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:18:24,312 started
+2016-05-29 18:18:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:23:24,324 started
+2016-05-29 18:23:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:28:24,309 started
+2016-05-29 18:28:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:33:24,324 started
+2016-05-29 18:33:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:38:24,293 started
+2016-05-29 18:38:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:43:24,314 started
+2016-05-29 18:43:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:48:24,297 started
+2016-05-29 18:48:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:53:24,339 started
+2016-05-29 18:53:24,395 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 18:58:24,313 started
+2016-05-29 18:58:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:03:24,297 started
+2016-05-29 19:03:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:08:24,336 started
+2016-05-29 19:08:24,392 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:13:24,301 started
+2016-05-29 19:13:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:18:24,316 started
+2016-05-29 19:18:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:23:24,297 started
+2016-05-29 19:23:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:28:24,316 started
+2016-05-29 19:28:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:33:24,318 started
+2016-05-29 19:33:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:38:24,313 started
+2016-05-29 19:38:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:43:24,325 started
+2016-05-29 19:43:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:48:24,310 started
+2016-05-29 19:48:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:53:24,325 started
+2016-05-29 19:53:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 19:58:24,325 started
+2016-05-29 19:58:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:03:24,329 started
+2016-05-29 20:03:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:08:24,329 started
+2016-05-29 20:08:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:13:24,327 started
+2016-05-29 20:13:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:18:24,299 started
+2016-05-29 20:18:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:23:24,322 started
+2016-05-29 20:23:24,378 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:28:24,335 started
+2016-05-29 20:28:24,390 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:33:24,312 started
+2016-05-29 20:33:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:38:24,312 started
+2016-05-29 20:38:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:43:24,315 started
+2016-05-29 20:43:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:48:24,277 started
+2016-05-29 20:48:24,334 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:53:24,331 started
+2016-05-29 20:53:24,387 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 20:58:24,329 started
+2016-05-29 20:58:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:03:24,304 started
+2016-05-29 21:03:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:08:24,292 started
+2016-05-29 21:08:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:13:24,300 started
+2016-05-29 21:13:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:18:24,296 started
+2016-05-29 21:18:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:23:24,320 started
+2016-05-29 21:23:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:28:24,338 started
+2016-05-29 21:28:24,393 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:33:24,281 started
+2016-05-29 21:33:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:38:24,329 started
+2016-05-29 21:38:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:43:24,296 started
+2016-05-29 21:43:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:48:24,314 started
+2016-05-29 21:48:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:53:24,327 started
+2016-05-29 21:53:24,383 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 21:58:24,322 started
+2016-05-29 21:58:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:03:24,312 started
+2016-05-29 22:03:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:08:24,321 started
+2016-05-29 22:08:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:13:24,301 started
+2016-05-29 22:13:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:18:24,309 started
+2016-05-29 22:18:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:23:24,320 started
+2016-05-29 22:23:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:28:24,330 started
+2016-05-29 22:28:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:33:24,308 started
+2016-05-29 22:33:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:38:24,325 started
+2016-05-29 22:38:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:43:24,324 started
+2016-05-29 22:43:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:48:24,318 started
+2016-05-29 22:48:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:53:24,343 started
+2016-05-29 22:53:24,399 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 22:58:24,302 started
+2016-05-29 22:58:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:03:24,305 started
+2016-05-29 23:03:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:08:24,309 started
+2016-05-29 23:08:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:13:24,283 started
+2016-05-29 23:13:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:18:24,311 started
+2016-05-29 23:18:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:23:24,648 started
+2016-05-29 23:23:24,743 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:28:24,297 started
+2016-05-29 23:28:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:33:24,317 started
+2016-05-29 23:33:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:38:24,316 started
+2016-05-29 23:38:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:43:24,302 started
+2016-05-29 23:43:24,359 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:48:24,300 started
+2016-05-29 23:48:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:53:24,329 started
+2016-05-29 23:53:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-29 23:58:24,295 started
+2016-05-29 23:58:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:03:24,328 started
+2016-05-30 00:03:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:08:24,307 started
+2016-05-30 00:08:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:13:24,319 started
+2016-05-30 00:13:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:18:24,320 started
+2016-05-30 00:18:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:23:24,316 started
+2016-05-30 00:23:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:28:24,335 started
+2016-05-30 00:28:24,398 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:33:24,318 started
+2016-05-30 00:33:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:38:24,322 started
+2016-05-30 00:38:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:43:24,299 started
+2016-05-30 00:43:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:48:24,312 started
+2016-05-30 00:48:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:53:24,337 started
+2016-05-30 00:53:24,393 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 00:58:24,325 started
+2016-05-30 00:58:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:03:24,315 started
+2016-05-30 01:03:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:08:24,318 started
+2016-05-30 01:08:24,374 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:13:24,325 started
+2016-05-30 01:13:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:18:24,313 started
+2016-05-30 01:18:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:23:24,393 started
+2016-05-30 01:23:24,450 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:28:24,353 started
+2016-05-30 01:28:24,409 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:33:24,325 started
+2016-05-30 01:33:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:38:24,320 started
+2016-05-30 01:38:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:43:24,333 started
+2016-05-30 01:43:24,388 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:48:24,316 started
+2016-05-30 01:48:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:53:24,310 started
+2016-05-30 01:53:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 01:58:24,298 started
+2016-05-30 01:58:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:03:24,308 started
+2016-05-30 02:03:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:08:24,303 started
+2016-05-30 02:08:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:13:24,290 started
+2016-05-30 02:13:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:18:24,336 started
+2016-05-30 02:18:24,393 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:28:24,322 started
+2016-05-30 02:28:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:33:24,311 started
+2016-05-30 02:33:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:38:24,276 started
+2016-05-30 02:38:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:43:24,330 started
+2016-05-30 02:43:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:48:24,305 started
+2016-05-30 02:48:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:53:24,298 started
+2016-05-30 02:53:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 02:58:25,761 started
+2016-05-30 02:58:26,096 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:03:24,309 started
+2016-05-30 03:03:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:08:24,301 started
+2016-05-30 03:08:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:13:24,307 started
+2016-05-30 03:13:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:18:24,300 started
+2016-05-30 03:18:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:23:24,285 started
+2016-05-30 03:23:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:28:24,326 started
+2016-05-30 03:28:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:33:24,311 started
+2016-05-30 03:33:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:38:24,311 started
+2016-05-30 03:38:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:43:24,294 started
+2016-05-30 03:43:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:48:24,280 started
+2016-05-30 03:48:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:53:24,320 started
+2016-05-30 03:53:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 03:58:24,299 started
+2016-05-30 03:58:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:03:24,284 started
+2016-05-30 04:03:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:08:24,270 started
+2016-05-30 04:08:24,327 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:13:24,313 started
+2016-05-30 04:13:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:18:24,315 started
+2016-05-30 04:18:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:23:24,311 started
+2016-05-30 04:23:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:28:24,304 started
+2016-05-30 04:28:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:33:24,301 started
+2016-05-30 04:33:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:38:24,315 started
+2016-05-30 04:38:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:43:24,300 started
+2016-05-30 04:43:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:48:24,300 started
+2016-05-30 04:48:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:53:24,313 started
+2016-05-30 04:53:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 04:58:24,320 started
+2016-05-30 04:58:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:03:24,314 started
+2016-05-30 05:03:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:08:24,321 started
+2016-05-30 05:08:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:13:24,308 started
+2016-05-30 05:13:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:18:25,958 started
+2016-05-30 05:18:26,463 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:23:24,510 started
+2016-05-30 05:23:24,601 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:28:24,285 started
+2016-05-30 05:28:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:33:24,292 started
+2016-05-30 05:33:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:38:24,270 started
+2016-05-30 05:38:24,327 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:43:24,292 started
+2016-05-30 05:43:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:48:24,279 started
+2016-05-30 05:48:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:53:24,380 started
+2016-05-30 05:53:24,436 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 05:58:24,414 started
+2016-05-30 05:58:24,470 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:03:24,295 started
+2016-05-30 06:03:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:08:24,308 started
+2016-05-30 06:08:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:13:24,317 started
+2016-05-30 06:13:24,374 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:18:24,295 started
+2016-05-30 06:18:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:23:24,312 started
+2016-05-30 06:23:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:28:24,320 started
+2016-05-30 06:28:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:33:24,311 started
+2016-05-30 06:33:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:38:24,307 started
+2016-05-30 06:38:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:43:24,317 started
+2016-05-30 06:43:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:48:24,308 started
+2016-05-30 06:48:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:53:24,329 started
+2016-05-30 06:53:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 06:58:24,302 started
+2016-05-30 06:58:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:03:24,318 started
+2016-05-30 07:03:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:08:24,314 started
+2016-05-30 07:08:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:13:24,309 started
+2016-05-30 07:13:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:18:24,308 started
+2016-05-30 07:18:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:23:24,276 started
+2016-05-30 07:23:24,334 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:28:24,304 started
+2016-05-30 07:28:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:33:24,314 started
+2016-05-30 07:33:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:38:24,301 started
+2016-05-30 07:38:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:43:24,313 started
+2016-05-30 07:43:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:48:24,305 started
+2016-05-30 07:48:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:53:24,311 started
+2016-05-30 07:53:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 07:58:24,315 started
+2016-05-30 07:58:24,372 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:03:24,347 started
+2016-05-30 08:03:24,415 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:08:24,304 started
+2016-05-30 08:08:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:13:24,331 started
+2016-05-30 08:13:24,387 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:18:24,299 started
+2016-05-30 08:18:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:23:24,314 started
+2016-05-30 08:23:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:28:24,309 started
+2016-05-30 08:28:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:33:24,392 started
+2016-05-30 08:33:24,448 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:38:24,307 started
+2016-05-30 08:38:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:43:24,313 started
+2016-05-30 08:43:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:48:24,315 started
+2016-05-30 08:48:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:53:24,336 started
+2016-05-30 08:53:24,392 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 08:58:24,329 started
+2016-05-30 08:58:24,385 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:03:24,321 started
+2016-05-30 09:03:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:08:24,312 started
+2016-05-30 09:08:24,374 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:13:24,302 started
+2016-05-30 09:13:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:18:24,316 started
+2016-05-30 09:18:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:23:24,341 started
+2016-05-30 09:23:24,396 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:28:24,302 started
+2016-05-30 09:28:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:33:24,302 started
+2016-05-30 09:33:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:38:24,430 started
+2016-05-30 09:38:24,521 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:43:24,341 started
+2016-05-30 09:43:24,396 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:48:24,314 started
+2016-05-30 09:48:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:53:24,308 started
+2016-05-30 09:53:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 09:58:24,310 started
+2016-05-30 09:58:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:03:24,332 started
+2016-05-30 10:03:24,389 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:08:24,317 started
+2016-05-30 10:08:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:13:24,313 started
+2016-05-30 10:13:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:18:24,272 started
+2016-05-30 10:18:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:23:24,293 started
+2016-05-30 10:23:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:28:24,316 started
+2016-05-30 10:28:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:33:24,348 started
+2016-05-30 10:33:24,403 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:38:24,307 started
+2016-05-30 10:38:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:43:24,294 started
+2016-05-30 10:43:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:48:24,285 started
+2016-05-30 10:48:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:53:24,290 started
+2016-05-30 10:53:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 10:58:24,268 started
+2016-05-30 10:58:24,326 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:03:24,296 started
+2016-05-30 11:03:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:08:24,327 started
+2016-05-30 11:08:24,387 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:13:24,282 started
+2016-05-30 11:13:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:18:24,280 started
+2016-05-30 11:18:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:23:24,282 started
+2016-05-30 11:23:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:28:24,312 started
+2016-05-30 11:28:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:33:24,341 started
+2016-05-30 11:33:24,398 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:38:24,332 started
+2016-05-30 11:38:24,388 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:43:24,283 started
+2016-05-30 11:43:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:48:24,296 started
+2016-05-30 11:48:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:53:24,275 started
+2016-05-30 11:53:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 11:58:24,293 started
+2016-05-30 11:58:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:03:24,296 started
+2016-05-30 12:03:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:08:24,283 started
+2016-05-30 12:08:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:13:24,272 started
+2016-05-30 12:13:24,335 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:18:24,297 started
+2016-05-30 12:18:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:23:24,296 started
+2016-05-30 12:23:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:28:24,283 started
+2016-05-30 12:28:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:33:24,301 started
+2016-05-30 12:33:24,357 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:38:24,334 started
+2016-05-30 12:38:24,390 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:48:24,291 started
+2016-05-30 12:48:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:53:24,367 started
+2016-05-30 12:53:24,422 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 12:58:24,271 started
+2016-05-30 12:58:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:03:24,285 started
+2016-05-30 13:03:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:08:24,290 started
+2016-05-30 13:08:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:13:24,484 started
+2016-05-30 13:13:24,598 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:18:24,284 started
+2016-05-30 13:18:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:23:24,292 started
+2016-05-30 13:23:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:28:24,277 started
+2016-05-30 13:28:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:33:24,288 started
+2016-05-30 13:33:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:38:24,297 started
+2016-05-30 13:38:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:43:24,285 started
+2016-05-30 13:43:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:48:24,284 started
+2016-05-30 13:48:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:53:24,283 started
+2016-05-30 13:53:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 13:58:24,275 started
+2016-05-30 13:58:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:03:24,297 started
+2016-05-30 14:03:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:08:24,270 started
+2016-05-30 14:08:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:13:24,310 started
+2016-05-30 14:13:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:18:24,283 started
+2016-05-30 14:18:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:23:24,276 started
+2016-05-30 14:23:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:28:24,288 started
+2016-05-30 14:28:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:33:24,283 started
+2016-05-30 14:33:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:38:24,279 started
+2016-05-30 14:38:24,335 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:43:24,284 started
+2016-05-30 14:43:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:48:24,272 started
+2016-05-30 14:48:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:53:24,284 started
+2016-05-30 14:53:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 14:58:24,273 started
+2016-05-30 14:58:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:03:24,306 started
+2016-05-30 15:03:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:08:24,342 started
+2016-05-30 15:08:24,398 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:13:24,273 started
+2016-05-30 15:13:24,335 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:18:24,284 started
+2016-05-30 15:18:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:23:24,275 started
+2016-05-30 15:23:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:28:24,308 started
+2016-05-30 15:28:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:33:24,294 started
+2016-05-30 15:33:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:43:24,347 started
+2016-05-30 15:43:24,404 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:48:24,342 started
+2016-05-30 15:48:24,397 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:53:24,290 started
+2016-05-30 15:53:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 15:58:24,271 started
+2016-05-30 15:58:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:03:24,279 started
+2016-05-30 16:03:24,335 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:08:24,343 started
+2016-05-30 16:08:24,400 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:13:24,281 started
+2016-05-30 16:13:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:18:24,279 started
+2016-05-30 16:18:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:23:24,262 started
+2016-05-30 16:23:24,318 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:28:24,282 started
+2016-05-30 16:28:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:33:24,264 started
+2016-05-30 16:33:24,321 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:38:24,267 started
+2016-05-30 16:38:24,325 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:43:24,297 started
+2016-05-30 16:43:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:48:24,307 started
+2016-05-30 16:48:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:53:24,339 started
+2016-05-30 16:53:24,396 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 16:58:24,312 started
+2016-05-30 16:58:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:03:24,273 started
+2016-05-30 17:03:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:08:24,336 started
+2016-05-30 17:08:24,392 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:13:24,271 started
+2016-05-30 17:13:24,326 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:18:24,271 started
+2016-05-30 17:18:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:23:24,275 started
+2016-05-30 17:23:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:28:24,358 started
+2016-05-30 17:28:24,450 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:33:24,287 started
+2016-05-30 17:33:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:38:24,337 started
+2016-05-30 17:38:24,393 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:43:24,282 started
+2016-05-30 17:43:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:48:24,271 started
+2016-05-30 17:48:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:53:24,330 started
+2016-05-30 17:53:24,387 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 17:58:24,277 started
+2016-05-30 17:58:24,335 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:03:24,270 started
+2016-05-30 18:03:24,327 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:08:24,338 started
+2016-05-30 18:08:24,397 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:13:24,275 started
+2016-05-30 18:13:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:18:24,281 started
+2016-05-30 18:18:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:23:24,274 started
+2016-05-30 18:23:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:28:24,277 started
+2016-05-30 18:28:24,334 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:33:24,287 started
+2016-05-30 18:33:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:38:24,274 started
+2016-05-30 18:38:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:43:24,288 started
+2016-05-30 18:43:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:48:24,295 started
+2016-05-30 18:48:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:53:24,288 started
+2016-05-30 18:53:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 18:58:24,274 started
+2016-05-30 18:58:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:03:24,288 started
+2016-05-30 19:03:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:08:24,302 started
+2016-05-30 19:08:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:13:24,281 started
+2016-05-30 19:13:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:18:24,288 started
+2016-05-30 19:18:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:23:24,260 started
+2016-05-30 19:23:24,316 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:28:24,282 started
+2016-05-30 19:28:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:33:24,312 started
+2016-05-30 19:33:24,402 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:38:24,328 started
+2016-05-30 19:38:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:43:24,291 started
+2016-05-30 19:43:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:48:24,364 started
+2016-05-30 19:48:24,421 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:53:24,264 started
+2016-05-30 19:53:24,321 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 19:58:24,270 started
+2016-05-30 19:58:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:03:24,283 started
+2016-05-30 20:03:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:08:24,356 started
+2016-05-30 20:08:24,412 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:13:24,277 started
+2016-05-30 20:13:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:18:24,273 started
+2016-05-30 20:18:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:23:24,261 started
+2016-05-30 20:23:24,318 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:28:24,268 started
+2016-05-30 20:28:24,325 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:33:24,268 started
+2016-05-30 20:33:24,326 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:38:24,270 started
+2016-05-30 20:38:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:43:24,265 started
+2016-05-30 20:43:24,322 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:48:24,258 started
+2016-05-30 20:48:24,315 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:53:24,266 started
+2016-05-30 20:53:24,323 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 20:58:24,262 started
+2016-05-30 20:58:24,321 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:03:24,258 started
+2016-05-30 21:03:24,315 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:08:24,256 started
+2016-05-30 21:08:24,312 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:13:24,267 started
+2016-05-30 21:13:24,324 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:18:24,266 started
+2016-05-30 21:18:24,323 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:23:24,265 started
+2016-05-30 21:23:24,321 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:28:24,273 started
+2016-05-30 21:28:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:33:24,257 started
+2016-05-30 21:33:24,314 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:38:24,273 started
+2016-05-30 21:38:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:43:24,268 started
+2016-05-30 21:43:24,324 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:53:24,299 started
+2016-05-30 21:53:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 21:58:24,273 started
+2016-05-30 21:58:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:03:24,284 started
+2016-05-30 22:03:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:08:24,279 started
+2016-05-30 22:08:24,336 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:13:24,303 started
+2016-05-30 22:13:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:18:24,281 started
+2016-05-30 22:18:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:23:24,280 started
+2016-05-30 22:23:24,336 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:28:24,279 started
+2016-05-30 22:28:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:33:24,297 started
+2016-05-30 22:33:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:38:24,280 started
+2016-05-30 22:38:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:43:24,284 started
+2016-05-30 22:43:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:48:26,047 started
+2016-05-30 22:48:26,411 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:53:24,288 started
+2016-05-30 22:53:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 22:58:24,285 started
+2016-05-30 22:58:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:03:24,271 started
+2016-05-30 23:03:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:08:24,294 started
+2016-05-30 23:08:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:13:24,319 started
+2016-05-30 23:13:24,376 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:18:24,277 started
+2016-05-30 23:18:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:23:24,282 started
+2016-05-30 23:23:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:28:24,290 started
+2016-05-30 23:28:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:33:24,277 started
+2016-05-30 23:33:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:38:24,268 started
+2016-05-30 23:38:24,324 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:43:24,286 started
+2016-05-30 23:43:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:48:24,298 started
+2016-05-30 23:48:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:53:24,296 started
+2016-05-30 23:53:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-30 23:58:24,286 started
+2016-05-30 23:58:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:03:24,288 started
+2016-05-31 00:03:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:08:24,287 started
+2016-05-31 00:08:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:13:24,286 started
+2016-05-31 00:13:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:18:24,275 started
+2016-05-31 00:18:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:23:24,297 started
+2016-05-31 00:23:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:28:24,290 started
+2016-05-31 00:28:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:33:24,276 started
+2016-05-31 00:33:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:38:24,275 started
+2016-05-31 00:38:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:43:24,274 started
+2016-05-31 00:43:24,331 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:48:24,272 started
+2016-05-31 00:48:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:53:24,274 started
+2016-05-31 00:53:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 00:58:24,281 started
+2016-05-31 00:58:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:03:24,274 started
+2016-05-31 01:03:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:08:24,272 started
+2016-05-31 01:08:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:13:24,272 started
+2016-05-31 01:13:24,327 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:18:24,287 started
+2016-05-31 01:18:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:23:24,282 started
+2016-05-31 01:23:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:28:24,296 started
+2016-05-31 01:28:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:33:24,297 started
+2016-05-31 01:33:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:38:24,276 started
+2016-05-31 01:38:24,332 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:43:24,278 started
+2016-05-31 01:43:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:48:24,283 started
+2016-05-31 01:48:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:53:24,290 started
+2016-05-31 01:53:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 01:58:24,284 started
+2016-05-31 01:58:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:03:24,269 started
+2016-05-31 02:03:24,325 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:08:24,296 started
+2016-05-31 02:08:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:13:24,270 started
+2016-05-31 02:13:24,327 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:18:24,281 started
+2016-05-31 02:18:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:23:24,287 started
+2016-05-31 02:23:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:28:24,282 started
+2016-05-31 02:28:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:33:24,286 started
+2016-05-31 02:33:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:38:24,280 started
+2016-05-31 02:38:24,337 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:43:24,277 started
+2016-05-31 02:43:24,334 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:48:24,282 started
+2016-05-31 02:48:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:53:24,292 started
+2016-05-31 02:53:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 02:58:24,287 started
+2016-05-31 02:58:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:03:24,281 started
+2016-05-31 03:03:24,341 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:08:24,294 started
+2016-05-31 03:08:24,349 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:13:24,300 started
+2016-05-31 03:13:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:18:24,287 started
+2016-05-31 03:18:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:23:26,636 started
+2016-05-31 03:23:27,422 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:28:24,278 started
+2016-05-31 03:28:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:33:24,274 started
+2016-05-31 03:33:24,333 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:38:24,267 started
+2016-05-31 03:38:24,324 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:43:24,278 started
+2016-05-31 03:43:24,336 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:48:24,376 started
+2016-05-31 03:48:24,465 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:53:24,299 started
+2016-05-31 03:53:24,356 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 03:58:24,273 started
+2016-05-31 03:58:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:03:24,281 started
+2016-05-31 04:03:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:08:24,279 started
+2016-05-31 04:08:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:13:24,287 started
+2016-05-31 04:13:24,343 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:18:24,268 started
+2016-05-31 04:18:24,326 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:23:24,374 started
+2016-05-31 04:23:24,429 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:28:24,264 started
+2016-05-31 04:28:24,319 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:33:24,284 started
+2016-05-31 04:33:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:38:24,281 started
+2016-05-31 04:38:24,340 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:43:24,339 started
+2016-05-31 04:43:24,397 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:48:24,305 started
+2016-05-31 04:48:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:53:24,296 started
+2016-05-31 04:53:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 04:58:24,287 started
+2016-05-31 04:58:24,345 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:03:24,310 started
+2016-05-31 05:03:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:08:24,272 started
+2016-05-31 05:08:24,328 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:13:24,297 started
+2016-05-31 05:13:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:18:24,305 started
+2016-05-31 05:18:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:23:24,312 started
+2016-05-31 05:23:24,369 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:28:24,289 started
+2016-05-31 05:28:24,347 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:33:24,304 started
+2016-05-31 05:33:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:38:24,303 started
+2016-05-31 05:38:24,359 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:43:24,311 started
+2016-05-31 05:43:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:48:24,318 started
+2016-05-31 05:48:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:53:24,286 started
+2016-05-31 05:53:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 05:58:24,310 started
+2016-05-31 05:58:24,367 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:03:24,314 started
+2016-05-31 06:03:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:08:24,367 started
+2016-05-31 06:08:24,424 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:13:24,307 started
+2016-05-31 06:13:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:18:24,298 started
+2016-05-31 06:18:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:23:24,316 started
+2016-05-31 06:23:24,373 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:28:24,294 started
+2016-05-31 06:28:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:33:24,310 started
+2016-05-31 06:33:24,366 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:38:24,310 started
+2016-05-31 06:38:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:43:24,365 started
+2016-05-31 06:43:24,421 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:48:24,294 started
+2016-05-31 06:48:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:53:24,303 started
+2016-05-31 06:53:24,359 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 06:58:24,345 started
+2016-05-31 06:58:24,400 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:03:24,308 started
+2016-05-31 07:03:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:08:24,353 started
+2016-05-31 07:08:24,408 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:13:24,313 started
+2016-05-31 07:13:24,368 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:18:24,286 started
+2016-05-31 07:18:24,342 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:23:24,295 started
+2016-05-31 07:23:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:28:24,343 started
+2016-05-31 07:28:24,399 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:33:24,272 started
+2016-05-31 07:33:24,330 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:38:24,330 started
+2016-05-31 07:38:24,401 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:43:24,337 started
+2016-05-31 07:43:24,396 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:48:24,300 started
+2016-05-31 07:48:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:53:24,365 started
+2016-05-31 07:53:24,421 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 07:58:24,304 started
+2016-05-31 07:58:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:03:24,297 started
+2016-05-31 08:03:24,355 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:08:24,295 started
+2016-05-31 08:08:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:13:24,317 started
+2016-05-31 08:13:24,374 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:18:24,307 started
+2016-05-31 08:18:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:23:24,323 started
+2016-05-31 08:23:24,379 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:28:24,305 started
+2016-05-31 08:28:24,361 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:33:24,314 started
+2016-05-31 08:33:24,377 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:38:24,362 started
+2016-05-31 08:38:24,420 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:43:24,306 started
+2016-05-31 08:43:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:48:24,331 started
+2016-05-31 08:48:24,388 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:53:24,392 started
+2016-05-31 08:53:24,448 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 08:58:24,302 started
+2016-05-31 08:58:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:03:24,308 started
+2016-05-31 09:03:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:08:24,287 started
+2016-05-31 09:08:24,344 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:13:24,281 started
+2016-05-31 09:13:24,338 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:18:24,282 started
+2016-05-31 09:18:24,339 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:23:24,327 started
+2016-05-31 09:23:24,383 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:28:24,307 started
+2016-05-31 09:28:24,362 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:33:24,325 started
+2016-05-31 09:33:24,382 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:38:24,308 started
+2016-05-31 09:38:24,365 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:43:24,320 started
+2016-05-31 09:43:24,375 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:48:24,304 started
+2016-05-31 09:48:24,360 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:53:24,364 started
+2016-05-31 09:53:24,434 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 09:58:24,346 started
+2016-05-31 09:58:24,401 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:03:24,295 started
+2016-05-31 10:03:24,352 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:08:24,356 started
+2016-05-31 10:08:24,411 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:13:24,299 started
+2016-05-31 10:13:24,354 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:18:24,307 started
+2016-05-31 10:18:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:23:24,318 started
+2016-05-31 10:23:24,386 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:28:24,347 started
+2016-05-31 10:28:24,403 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:33:24,293 started
+2016-05-31 10:33:24,351 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:38:24,300 started
+2016-05-31 10:38:24,358 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:43:24,333 started
+2016-05-31 10:43:24,389 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:48:24,296 started
+2016-05-31 10:48:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:53:24,313 started
+2016-05-31 10:53:24,370 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 10:58:24,355 started
+2016-05-31 10:58:24,410 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:03:24,323 started
+2016-05-31 11:03:24,395 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:08:24,267 started
+2016-05-31 11:08:24,329 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:13:24,362 started
+2016-05-31 11:13:24,417 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:18:24,297 started
+2016-05-31 11:18:24,353 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:23:24,324 started
+2016-05-31 11:23:24,381 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:28:24,309 started
+2016-05-31 11:28:24,364 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:33:24,321 started
+2016-05-31 11:33:24,380 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:38:24,334 started
+2016-05-31 11:38:24,391 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:43:24,367 started
+2016-05-31 11:43:24,430 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:48:24,310 started
+2016-05-31 11:48:24,371 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:53:24,299 started
+2016-05-31 11:53:24,363 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 11:58:24,293 started
+2016-05-31 11:58:24,350 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 12:03:24,314 started
+2016-05-31 12:03:24,378 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 12:08:24,286 started
+2016-05-31 12:08:24,346 Starting new HTTPS connection (1): stream.twitter.com
+2016-05-31 12:29:19,774 started
+2016-05-31 12:29:19,835 Starting new HTTPS connection (1): stream.twitter.com
