@@ -1,7 +1,3 @@
-INFO:root:started
-INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
-2016-05-28 22:00:18,510 started
-2016-05-28 22:00:18,567 Starting new HTTPS connection (1): stream.twitter.com
 2016-05-28 22:53:50,101 started
 2016-05-28 22:53:50,161 Starting new HTTPS connection (1): stream.twitter.com
 2016-05-28 22:58:24,347 started
