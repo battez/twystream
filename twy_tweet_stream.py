@@ -18,15 +18,23 @@ import time
 import logging
 FORMAT = "%(asctime)-15s %(message)s"
 logging.basicConfig(filename="log.txt", level=logging.INFO, format=FORMAT)
+import sys
+CURR_PLATFORM = sys.platform
+if CURR_PLATFORM != 'linux':
+    TWITDIR = 'U:\Documents\Project\demoapptwitter'
+    SCRAPEDIR = 'U:\Documents\Project\scrape'
+else:
+    TWITDIR = '/home/luke/programming/projectfiles/demoapptwitter' # FIXME:
+    SCRAPEDIR = '/home/luke/programming/scraping'#FIXME:
+
+
 
 # get the Twitter API app Oauth tokens
-import sys
-TWITDIR = 'U:\Documents\Project\demoapptwitter'
 sys.path.insert(0, TWITDIR)
 import config
 
 # get fn updating water levels:
-SCRAPEDIR = 'U:\Documents\Project\scrape'
+
 sys.path.insert(0, SCRAPEDIR)
 import parse_xml_locs, retrieve_latest_from_csv
 
@@ -127,11 +135,14 @@ if __name__ == '__main__':
     logging.info('Task started')
 
     # choose which filter and query will be streamed
-    filters = ['follow', 'locations', 'track']
+    filters = ['follow', 'locations', 'track', 'locfrance']
     query = ''
 
     # set the Twitter Stream type of query here:
-    filtering = filters[1]
+    if CURR_PLATFORM != 'linux':
+        filtering = filters[1]
+    else:
+        filtering = filters[3] 
 
     if(filtering == 'follow'):
         from twython_search_api_lib import load_tweet_ids
@@ -148,6 +159,7 @@ if __name__ == '__main__':
         query = ",".join(users)
     
     elif (filtering == 'locations'):
+
 
         dbc = get_dbc('Twitter', 'gauges')
         
@@ -187,7 +199,70 @@ if __name__ == '__main__':
             coords = [str(coord) for coord in document['bounding_box']]
             query += prefix + ','.join(coords)
             prefix = ','
-           
+
+    elif (filtering == 'locfrance'):
+
+        # set up gauges locations        
+        print('processing france ...')
+        exit()
+        # get all gauges averages:
+        
+        # retrieve the location IDs of all the gauges
+        
+        # get all the current levels from web CSVs 
+        
+                
+        # now take the n highest levels and watch these locations with Twitter:
+     
+
+        prefix = ''
+        for document in observed:
+        
+            coords = [str(coord) for coord in document['bounding_box']]
+            query += prefix + ','.join(coords)
+            prefix = ',' 
+    
+    elif (filtering == 'locations'):
+
+
+        dbc = get_dbc('Twitter', 'gauges')
+        
+        print('processing gauge levels...')
+        # get all gauges averages:
+        gauges = dbc.find({}, {'loc_id':1,'avg_level':1, '_id':0})
+        
+        # retrieve the location IDs of all the gauges
+        ids = [gauge['loc_id'] for gauge in gauges]
+        
+        # get all the current levels from web CSVs 
+        # debug:
+        # latest_levels = {'116008':'0.01', '133112': \
+        # '0.239', '234268': '5.224', '372871': '0.075'}
+        latest_levels = retrieve_latest_from_csv.scrape_current_levels(ids) 
+        
+        excluded_gauges = ['116008'] # some seem to be wrongly calibrated!
+
+        for gauge in gauges.rewind():
+                
+            if (gauge['loc_id'] in latest_levels) and \
+            (gauge['loc_id'] not in excluded_gauges):
+                current_scaled = float(latest_levels[gauge['loc_id']]) / \
+                float(gauge['avg_level'])
+                current_scaled = float("{0:.4f}".format(current_scaled))
+                dbc.update({'loc_id': gauge['loc_id']}, {'$set': \
+                    {'current_scaled': current_scaled, \
+                    'current':latest_levels[gauge['loc_id']] }})
+                
+        # now take the n highest levels and watch these locations with Twitter:
+        observed = dbc.find({}, { 'current_scaled': 1, 'bounding_box': 1, \
+            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(25)
+
+        prefix = ''
+        for document in observed:
+        
+            coords = [str(coord) for coord in document['bounding_box']]
+            query += prefix + ','.join(coords)
+            prefix = ',' 
     else:
         # TODO: keyword tracking if needed.
         pass 
