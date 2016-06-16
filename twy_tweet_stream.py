@@ -37,9 +37,7 @@ class TwitterStream(TwythonStreamer):
     def __init__(self, consumer_key, consumer_secret, token, token_secret, \
         tqueue):
         self.tweet_queue = tqueue
-        # FIXME: use in case of threading
-        # self._stopevent = threading.Event( )
-
+       
         # pass credentials to the parent class for authenticating:
         super(TwitterStream, self).__init__(consumer_key, consumer_secret, \
             token, token_secret)
@@ -52,7 +50,8 @@ class TwitterStream(TwythonStreamer):
         logging.warning('code: ' + str(status_code))
         
         # Uncomment to stop trying to get data because of the error
-        # self.disconnect()
+        self.disconnect()
+        logging.info('exited after disconnect.' )
 
 
 def stream_tweets(tweets_queue, querystring, filter='follow'):
@@ -159,10 +158,8 @@ if __name__ == '__main__':
         # retrieve the location IDs of all the gauges
         ids = [gauge['loc_id'] for gauge in gauges]
         
-        # get all the current levels from web CSVs 
-        # debug:
-        # latest_levels = {'116008':'0.01', '133112': \
-        # '0.239', '234268': '5.224', '372871': '0.075'}
+        # get all the current levels from web CSVs on SEPA website
+        # debug: latest_levels = {'116008':'0.01', '133112': '0.239'}
         latest_levels = retrieve_latest_from_csv.scrape_current_levels(ids) 
         logging.info('retrieved latest from CSV: ' + str(len(latest_levels)))
         for gauge in gauges.rewind():
@@ -178,7 +175,7 @@ if __name__ == '__main__':
                 
         # now take the n highest levels and watch these locations with Twitter:
         observed = dbc.find({}, { 'current_scaled': 1, 'bounding_box': 1, \
-            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(20)
+            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(15)
 
 
         logging.info('observing DB query completed. ')
@@ -190,18 +187,18 @@ if __name__ == '__main__':
             query += prefix + ','.join(coords)
             prefix = ',' # after first item we need a comma every time!
 
-        logging.info('coords set up. Query string built. ') 
 
         # http://www.mapdevelopers.com/geocode_bounding_box.php
         # manually add priority places 
         # # notts river greet;loughborough - flood alert 14/06/ 
         ##  1.274237, 52.734273, -1.168320, 52.794977
-        extras = '-1.071513,53.034387,-0.884745,53.126366,'
-        # + \
-        # '1.274237,52.734273,-1.168320,52.794977,' FIXME!
-        query = extras + query
+        # stafford, cheshire, 16/06/ added. Flood alerts.
+        EXTRAS = '-1.789281,52.692522,-1.454885,52.860338,-2.169683,52.687947,-1.972616,52.807448,-2.953292,53.255697,-2.914123535,53.28841066,'
 
-       
+        query = EXTRAS + query
+        query = ''.join(query.split()) # remove any extra whitespace
+        logging.info('coords set up. Query string built. ') 
+
         # in case something went wrong, just use cached query string
         cached_query = 'cached.txt'
         if len(query) > 100:
