@@ -49,7 +49,7 @@ class TwitterStream(TwythonStreamer):
             self.tweet_queue.put(data)
 
     def on_error(self, status_code, data):
-        logging.warning('code: ' + status_code)
+        logging.warning('code: ' + str(status_code))
         
         # Uncomment to stop trying to get data because of the error
         # self.disconnect()
@@ -57,7 +57,8 @@ class TwitterStream(TwythonStreamer):
 
 def stream_tweets(tweets_queue, querystring, filter='follow'):
     ''' samples the stream API and handles errors'''
-    print(querystring)
+    logging.info(querystring)
+
     # OAuth credentials 
     consumer_key = config.ul_consumer_key
     consumer_secret = config.ul_consumer_secret
@@ -124,7 +125,7 @@ def get_dbc(db_name, collection, host='localhost:27017'):
 if __name__ == '__main__':
     ''' run the script, be sure to adjust the query 
     as needed'''
-    logging.info('Task started')
+    
 
     # choose which filter and query will be streamed
     filters = ['follow', 'locations', 'track']
@@ -163,13 +164,11 @@ if __name__ == '__main__':
         # latest_levels = {'116008':'0.01', '133112': \
         # '0.239', '234268': '5.224', '372871': '0.075'}
         latest_levels = retrieve_latest_from_csv.scrape_current_levels(ids) 
-        
-        excluded_gauges = ['116008'] # some seem to be wrongly calibrated!
-
+        logging.info('retrieved latest from CSV: ' + str(len(latest_levels)))
         for gauge in gauges.rewind():
                 
             if (gauge['loc_id'] in latest_levels) and \
-            (gauge['loc_id'] not in excluded_gauges):
+            (gauge['loc_id'] not in config.excluded_gauges):
                 current_scaled = float(latest_levels[gauge['loc_id']]) / \
                 float(gauge['avg_level'])
                 current_scaled = float("{0:.4f}".format(current_scaled))
@@ -179,25 +178,56 @@ if __name__ == '__main__':
                 
         # now take the n highest levels and watch these locations with Twitter:
         observed = dbc.find({}, { 'current_scaled': 1, 'bounding_box': 1, \
-            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(25)
+            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(20)
 
-        prefix = ''
+
+        logging.info('observing DB query completed. ')
+
+        prefix = '' # for separating querystring items with a comma
         for document in observed:
-        
+            
             coords = [str(coord) for coord in document['bounding_box']]
             query += prefix + ','.join(coords)
-            prefix = ','
-           
+            prefix = ',' # after first item we need a comma every time!
+
+        logging.info('coords set up. Query string built. ') 
+
+        # http://www.mapdevelopers.com/geocode_bounding_box.php
+        # manually add priority places 
+        # # notts river greet;loughborough - flood alert 14/06/ 
+        ##  1.274237, 52.734273, -1.168320, 52.794977
+        extras = '-1.071513,53.034387,-0.884745,53.126366,'
+        # + \
+        # '1.274237,52.734273,-1.168320,52.794977,' FIXME!
+        query = extras + query
+
+       
+        # in case something went wrong, just use cached query string
+        cached_query = 'cached.txt'
+        if len(query) > 100:
+            logging.info('cache writing...')
+            # all is OK so cache this query to a file
+            with open(cached_query, "w") as text_file:
+                print(query, file=text_file)
+                logging.info('...cache written.')
+
+        else:
+            # load from file
+            with open(cached_query, "r") as text_file:
+                query = text_file.read()
+                logging.info('using cached as something went wrong.')
+
     else:
         # TODO: keyword tracking if needed.
         pass 
 
     # Store the Twitter Stream of tweets in a remote db via pymongo
-    dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
+    # dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
+    dbc = get_dbc('Twitter', 'localstreamedtweets') # temp use localhost
 
     # set up the queue & htread to make it more robust:
     tweet_queue = Queue()
-
+    logging.info('passing query to twitter API...')
     # setup a thread whose functionality is the target:
     t = Thread(name='Stream-Tweets', target=stream_tweets, \
         args=(tweet_queue, query, filtering), daemon=True)
