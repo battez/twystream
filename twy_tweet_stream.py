@@ -30,6 +30,7 @@ SCRAPEDIR = 'U:\Documents\Project\scrape'
 sys.path.insert(0, SCRAPEDIR)
 import parse_xml_locs, retrieve_latest_from_csv
 
+
 # implement our extension to Twythons streamer
 class TwitterStream(TwythonStreamer):
     '''Set up a queue for the tweets. Provides information on what to do
@@ -124,7 +125,6 @@ def get_dbc(db_name, collection, host='localhost:27017'):
 if __name__ == '__main__':
     ''' run the script, be sure to adjust the query 
     as needed'''
-    
 
     # choose which filter and query will be streamed
     filters = ['follow', 'locations', 'track']
@@ -149,9 +149,12 @@ if __name__ == '__main__':
     
     elif (filtering == 'locations'):
 
+        # import this Env Agency wrapper to get bounding boxes for risk areas
+        import api_wrapper
+
         dbc = get_dbc('Twitter', 'gauges')
-        
         print('processing gauge levels...')
+     
         # get all gauges averages:
         gauges = dbc.find({}, {'loc_id':1,'avg_level':1, '_id':0})
         
@@ -175,7 +178,7 @@ if __name__ == '__main__':
                 
         # now take the n highest levels and watch these locations with Twitter:
         observed = dbc.find({}, { 'current_scaled': 1, 'bounding_box': 1, \
-            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(15)
+            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(14)
 
 
         logging.info('observing DB query completed. ')
@@ -187,15 +190,25 @@ if __name__ == '__main__':
             query += prefix + ','.join(coords)
             prefix = ',' # after first item we need a comma every time!
 
-
-        # http://www.mapdevelopers.com/geocode_bounding_box.php
-        # manually add priority places 
-        # # notts river greet;loughborough - flood alert 14/06/ 
-        ##  1.274237, 52.734273, -1.168320, 52.794977
-        # stafford, cheshire, 16/06/ added. Flood alerts.
-        EXTRAS = '-1.789281,52.692522,-1.454885,52.860338,-2.169683,52.687947,-1.972616,52.807448,-2.953292,53.255697,-2.914123535,53.28841066,'
-
-        query = EXTRAS + query
+        '''http://www.mapdevelopers.com/geocode_bounding_box.php
+        manually add priority places 
+         notts river greet;loughborough - flood alert 14/06/ 
+          1.274237, 52.734273, -1.168320, 52.794977
+        stafford, cheshire, 16/06/ added. Flood alerts.
+        EXTRAS = '-1.789281,52.692522,-1.454885,52.860338,-2.169683,52.687947,
+        -1.972616,52.807448,-2.953292,53.255697,-2.914123535,53.28841066,'
+        '''
+        #
+        # Import some risk areas from latest Env Agency severity warning list. 
+        apiw = api_wrapper.ApiWrapper()
+        risk_area_urls = apiw.get_risk_areas(min_severity=4, max_areas=10)
+        b_boxes = apiw.get_boxes(risk_area_urls) # list with 4 coord-bound boxes in
+        if not b_boxes:
+            pass
+        else:
+            b_boxes = ','.join(map(str, b_boxes))
+            query = query + ',' + b_boxes
+        
         query = ''.join(query.split()) # remove any extra whitespace
         logging.info('coords set up. Query string built. ') 
 
@@ -220,15 +233,17 @@ if __name__ == '__main__':
 
     # Store the Twitter Stream of tweets in a remote db via pymongo
     # dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
-    dbc = get_dbc('Twitter', 'localstreamedtweets') # temp use localhost
+    # changed 20/6/16 to new database (old was localstreamedtweets)
+    dbc = get_dbc('Twitter', 'streamed_two') # temp use localhost
 
     # set up the queue & htread to make it more robust:
     tweet_queue = Queue()
     logging.info('passing query to twitter API...')
+
     # setup a thread whose functionality is the target:
     t = Thread(name='Stream-Tweets', target=stream_tweets, \
         args=(tweet_queue, query, filtering), daemon=True)
-    t.start() # since it is a daemon, we don't t.join() .
+    t.start() # NB since it is a daemon, we don't need to use t.join() .
 
     # infinite loop that stores the tweets from the queue:
     process_tweets(dbc, tweet_queue)
