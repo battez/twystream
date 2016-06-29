@@ -112,6 +112,7 @@ class ApiWrapper(object):
         x, y = zip(*list(self.explode(f['geometry']['coordinates'])))
         return min(x), min(y), max(x), max(y)
 
+
     def get_boxes(self, risk_area_urls, untuple=True):
         if not risk_area_urls:
             logging.info('risk areas URLs was empty!')

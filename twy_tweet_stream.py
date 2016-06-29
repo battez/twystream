@@ -127,11 +127,12 @@ if __name__ == '__main__':
     as needed'''
 
     # choose which filter and query will be streamed
-    filters = ['follow', 'locations', 'track']
+    filters = ['follow', 'locations', 'locations_disable_sepa', 'track']
     query = ''
 
-    # set the Twitter Stream type of query here:
-    filtering = filters[1]
+    # IMPORTANT: set the Twitter Stream type of query here.
+    # This sets out what type of search you will request from the Twitter API
+    filtering = filters[2]
 
     if(filtering == 'follow'):
         from twython_search_api_lib import load_tweet_ids
@@ -147,48 +148,52 @@ if __name__ == '__main__':
 
         query = ",".join(users)
     
-    elif (filtering == 'locations'):
+    elif (filtering[0:9] == 'locations'):
 
         # import this Env Agency wrapper to get bounding boxes for risk areas
         import api_wrapper
 
-        dbc = get_dbc('Twitter', 'gauges')
-        print('processing gauge levels...')
-     
-        # get all gauges averages:
-        gauges = dbc.find({}, {'loc_id':1,'avg_level':1, '_id':0})
-        
-        # retrieve the location IDs of all the gauges
-        ids = [gauge['loc_id'] for gauge in gauges]
-        
-        # get all the current levels from web CSVs on SEPA website
-        # debug: latest_levels = {'116008':'0.01', '133112': '0.239'}
-        latest_levels = retrieve_latest_from_csv.scrape_current_levels(ids) 
-        logging.info('retrieved latest from CSV: ' + str(len(latest_levels)))
-        for gauge in gauges.rewind():
-                
-            if (gauge['loc_id'] in latest_levels) and \
-            (gauge['loc_id'] not in config.excluded_gauges):
-                current_scaled = float(latest_levels[gauge['loc_id']]) / \
-                float(gauge['avg_level'])
-                current_scaled = float("{0:.4f}".format(current_scaled))
-                dbc.update({'loc_id': gauge['loc_id']}, {'$set': \
-                    {'current_scaled': current_scaled, \
-                    'current':latest_levels[gauge['loc_id']] }})
-                
-        # now take the n highest levels and watch these locations with Twitter:
-        observed = dbc.find({}, { 'current_scaled': 1, 'bounding_box': 1, \
-            'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(14)
+        # allow disabling of scottish areas:
+        if filtering[-12:] != 'disable_sepa':
 
-
-        logging.info('observing DB query completed. ')
-
-        prefix = '' # for separating querystring items with a comma
-        for document in observed:
+            dbc = get_dbc('Twitter', 'gauges')
+            print('processing gauge levels...')
+         
+            # get all gauges averages:
+            gauges = dbc.find({}, {'loc_id':1,'avg_level':1, '_id':0})
             
-            coords = [str(coord) for coord in document['bounding_box']]
-            query += prefix + ','.join(coords)
-            prefix = ',' # after first item we need a comma every time!
+            # retrieve the location IDs of all the gauges
+            ids = [gauge['loc_id'] for gauge in gauges]
+            
+            # get all the current levels from web CSVs on SEPA website
+            # debug: latest_levels = {'116008':'0.01', '133112': '0.239'}
+            latest_levels = retrieve_latest_from_csv.scrape_current_levels(ids) 
+            logging.info('retrieved latest from CSV: ' + str(len(latest_levels)))
+            for gauge in gauges.rewind():
+                    
+                if (gauge['loc_id'] in latest_levels) and \
+                (gauge['loc_id'] not in config.excluded_gauges):
+                    current_scaled = float(latest_levels[gauge['loc_id']]) / \
+                    float(gauge['avg_level'])
+                    current_scaled = float("{0:.4f}".format(current_scaled))
+                    dbc.update({'loc_id': gauge['loc_id']}, {'$set': \
+                        {'current_scaled': current_scaled, \
+                        'current':latest_levels[gauge['loc_id']] }})
+                    
+            # now take the n highest levels and watch these locations with Twitter:
+            observed = dbc.find({}, { 'current_scaled': 1, 'bounding_box': 1, \
+                'loc_id': 1, '_id': 0 }).sort([('current_scaled', -1)]).limit(14)
+
+
+            logging.info('observing DB query completed. ')
+
+            prefix = '' # for separating querystring items with a comma
+            for document in observed:
+                
+                coords = [str(coord) for coord in document['bounding_box']]
+                query += prefix + ','.join(coords)
+                prefix = ',' # after first item we need a comma every time!
+
 
         '''http://www.mapdevelopers.com/geocode_bounding_box.php
         manually add priority places 
@@ -201,16 +206,23 @@ if __name__ == '__main__':
         #
         # Import some risk areas from latest Env Agency severity warning list. 
         apiw = api_wrapper.ApiWrapper()
-        risk_area_urls = apiw.get_risk_areas(min_severity=4, max_areas=10)
+        risk_area_urls = apiw.get_risk_areas(min_severity=4, max_areas=12)
         b_boxes = apiw.get_boxes(risk_area_urls) # list with 4 coord-bound boxes in
         if not b_boxes:
-            pass
+            if not query:
+                logging.info('No query could be built as EnvAgency bounding boxes empty. ') 
+                exit()
         else:
+            # convert these boxes to a string and append to any query we may have already
             b_boxes = ','.join(map(str, b_boxes))
-            query = query + ',' + b_boxes
+
+            # build a valid twitter-api string of locations, defined by bounding boxes
+            if not query:
+                query = b_boxes
+            else:
+                query = query + ',' + b_boxes
         
         query = ''.join(query.split()) # remove any extra whitespace
-        logging.info('coords set up. Query string built. ') 
 
         # in case something went wrong, just use cached query string
         cached_query = 'cached.txt'
@@ -234,11 +246,12 @@ if __name__ == '__main__':
     # Store the Twitter Stream of tweets in a remote db via pymongo
     # dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
     # changed 20/6/16 to new database (old was localstreamedtweets)
-    dbc = get_dbc('Twitter', 'streamed_two') # temp use localhost
+    collection_name = 'ea_risk_tweets'
+    dbc = get_dbc('Twitter', collection_name) # temp use localhost
 
     # set up the queue & htread to make it more robust:
     tweet_queue = Queue()
-    logging.info('passing query to twitter API...')
+    logging.info('passing to twitter API; db.collection:' + collection_name)
 
     # setup a thread whose functionality is the target:
     t = Thread(name='Stream-Tweets', target=stream_tweets, \
