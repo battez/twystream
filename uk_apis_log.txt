@@ -1,0 +1,5 @@
+2016-07-05 13:28:26,333 risk areas URLs was empty!
+2016-07-05 13:29:34,556 risk areas URLs was empty!
+2016-07-05 13:30:07,026 risk areas URLs was empty!
+2016-07-05 13:30:25,327 risk areas URLs was empty!
+2016-07-05 13:30:33,430 risk areas URLs was empty!

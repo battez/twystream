@@ -19,7 +19,7 @@ class ApiWrapper(object):
         super(ApiWrapper, self).__init__()
         
 
-    def get_risk_areas(self, min_severity=4, max_areas=5):
+    def get_risk_areas(self, min_severity=4, max_areas=10):
         
         risk_areas = [] # list URLs
         url = self.RISK_STEM_URL_EA + self.RISK_SUFFIX + \
@@ -33,8 +33,8 @@ class ApiWrapper(object):
 
                 # loop through severity_level in asc. order
                 for row in areas_json['items']:
-                
-                    if int(row['severityLevel']) == severity:
+                    
+                    if (int(row['severityLevel']) == severity) and ('floodArea' in row):
 
                         # only stop when reach required limit 
                         if len(risk_areas) < max_areas:
@@ -152,9 +152,10 @@ class ApiWrapper(object):
 
 # debugging: direct execution of this file:
 if __name__ == '__main__':
-    pass
-    # apiw = ApiWrapper()
-    # risk_area_urls = apiw.get_risk_areas()
+    
+    apiw = ApiWrapper()
+    risk_area_urls = apiw.get_risk_areas()
 
-    # b_boxes = apiw.get_boxes(risk_area_urls) 
-    #print(b_boxes)
+    b_boxes = apiw.get_boxes(risk_area_urls) 
+    print(b_boxes)
+    pass
