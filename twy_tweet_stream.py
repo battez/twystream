@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
     # IMPORTANT: set the Twitter Stream type of query here.
     # This sets out what type of search you will request from the Twitter API
-    filtering = filters[2]
+    filtering = filters[1]
 
     if(filtering == 'follow'):
         from twython_search_api_lib import load_tweet_ids
@@ -206,7 +206,7 @@ if __name__ == '__main__':
         #
         # Import some risk areas from latest Env Agency severity warning list. 
         apiw = api_wrapper.ApiWrapper()
-        risk_area_urls = apiw.get_risk_areas(min_severity=4, max_areas=12)
+        risk_area_urls = apiw.get_risk_areas(min_severity=4, max_areas=10)
         b_boxes = apiw.get_boxes(risk_area_urls) # list with 4 coord-bound boxes in
         if not b_boxes:
             if not query:
@@ -246,7 +246,7 @@ if __name__ == '__main__':
     # Store the Twitter Stream of tweets in a remote db via pymongo
     # dbc = get_dbc('database', 'streamedtweets', config.MONGO_URI)
     # changed 20/6/16 to new database (old was localstreamedtweets)
-    collection_name = 'ea_risk_tweets'
+    collection_name = 'sepa_ea_risk_tweets'
     dbc = get_dbc('Twitter', collection_name) # temp use localhost
 
     # set up the queue & htread to make it more robust:

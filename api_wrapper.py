@@ -116,7 +116,7 @@ class ApiWrapper(object):
     def get_boxes(self, risk_area_urls, untuple=True):
         if not risk_area_urls:
             logging.info('risk areas URLs was empty!')
-            exit()
+            return []
 
         b_boxes = []
 
