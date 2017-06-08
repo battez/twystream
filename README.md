@@ -16,6 +16,7 @@ Call **twy_tweet_stream.py** with python. This requires a couple of simple scrip
 ```
 # class ApiWrapper() function is called with a min. severity level and max. no. areas to retrieve:
 get_risk_areas(min_severity=4, max_areas=10)
+- these areas (as bounding boxes) are passed to Twitter Streaming API, using Twython library
 ```
 - To access Twitter, you need API access, adjust the directory paths for your system, including to a file config.py with your Twitter OAuth access keys, token and secrets:
 
